@@ -1,0 +1,47 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Demo_Application.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap-datepicker.js" type="text/javascript"></script>
+    
+     <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ <link href="Styles/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+</head>
+<%--<body>
+    <form id="form1" runat="server">
+    <table id="Table1" width="100%" runat="server" style=" margin-top:10;" >
+<tr>
+<td width="100%" align="center"> <asp:Label ID="textlabel" class="label label-info" runat="server" Text="WInd Monitoring System" Font-Size="Large"></asp:Label></td>
+</tr>
+</table>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>--%>
+<body>
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2>
+                Wind monitoring system</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <form runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

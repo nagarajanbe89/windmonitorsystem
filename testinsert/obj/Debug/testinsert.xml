@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+testinsert
+</name>
+</assembly>
+<members>
+<member name="P:testinsert.servicesTest.TestContext">
+	<summary>
+Gets or sets the test context which provides
+information about and functionality for the current test run.
+</summary>
+</member><member name="M:testinsert.servicesTest.insertTest">
+	<summary>
+A test for insert
+</summary>
+</member><member name="T:testinsert.servicesTest">
+	<summary>
+This is a test class for servicesTest and is intended
+to contain all servicesTest Unit Tests
+</summary>
+</member>
+</members>
+</doc>
