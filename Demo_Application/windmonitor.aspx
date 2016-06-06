@@ -105,7 +105,7 @@
                 <td align="left">
                     <button id="btnsave" type="button" runat="server" class="btn btn-default" onclick="javascript:insert();">
                         Save</button>
-                    <button id="btnclear" type="button" runat="server" class="btn btn-default" onclick="javascript:clear();">
+                    <button id="btnclear" type="button" runat="server" class="btn btn-default" onclick="javascript:empty();">
                         Cancel</button>
                 </td>
             </tr>
@@ -272,7 +272,7 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".datepicker").datepicker({ format: 'MM dd,yyyy', autoclose: true, todayBtn: 'linked' });
+            $(".datepicker").datepicker({ dateFormat: 'MM dd,yy', autoclose: true, todayBtn: 'linked' });
             var currentDate = new Date();
             $(".datepicker").datepicker("setDate", currentDate);
         });
@@ -302,18 +302,7 @@
             });
         }
     </script>
-    <script type="text/javascript">
-       
-        function clear() {
-            $('#<%=txt_stationcode.ClientID%>').val();
-            $(".datepicker").datepicker("setDate", currentDate);
-            $('#<%=txtpredicted_speed.ClientID%>').val();
-            $('#<%=txtactual_speed.ClientID%>').val();
-            $('#<%=txtvariance.ClientID%>').val();
-
-
-        }
-    </script>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             $.ajax({
@@ -360,5 +349,23 @@
                 }
             });
         });
+    </script>
+    <script type="text/javascript">
+        function clear() {
+          
+        }
+    </script>
+    <script type="text/javascript">
+        function empty() {
+            $('#<%=txt_stationcode.ClientID%>').val("");
+                       $('#<%=txtpredicted_speed.ClientID%>').val("");
+            $('#<%=txtactual_speed.ClientID%>').val("");
+            $('#<%=txtvariance.ClientID%>').val("");
+            $('#<%=cbocity.ClientID%>').val(0);
+            $('#<%=cbostate.ClientID%>').val(0);
+            $(".datepicker").datepicker("setDate", currentDate);
+
+
+        }
     </script>
 </asp:Content>
